@@ -1,0 +1,71 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+	background-color: #dfdfdf;
+}
+
+body > div {
+	width: 80%;
+	margin: 65px auto 0 auto;
+	text-align: center;
+}
+
+body > div > form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	gap: 1.5em;
+	align-items: center;
+	height: 200px;
+}
+
+body > div > form > input {
+	min-width: 420px;
+	line-height: 2em;
+	border-radius: 4px;
+	outline: none;
+	padding-inline: 0.6em;
+	border: none;
+	letter-spacing: 0.75px;
+	font-weight: 500;
+}
+
+body > div > form > input:focus {
+	-webkit-box-shadow: inset 0px 0px 2px 1px #a8a7a7;
+	-moz-box-shadow: inset 0px 0px 2px 1px #a8a7a7;
+	box-shadow: inset 0px 0px 2px 1px #a8a7a7;
+}
+
+body > div > form > button {
+	min-width: 180px;
+	line-height: 2.2em;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-box-shadow: 8.5px 9.5px 2.5px -2px #a8a7a7;
+	-moz-box-shadow: 3.5px 5.5px 2.5px -2px #a8a7a7;
+	box-shadow: 3.5px 5.5px 2.5px -2px #a8a7a7;
+	border: none;
+	background-color: rgb(27, 27, 27);
+	color: #ffffff;
+}
+
+body > div > form > button:active {
+	-webkit-box-shadow: 8.5px 9.5px 2.5px -2px #dddddd;
+	-moz-box-shadow: 0px 0px 2.5px -2px #dddddd;
+	box-shadow: 0px 0px 2.5px -2px #dddddd;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+ul.errors {
+	color: rgb(241, 41, 41);
+}
+
+ul.success {
+	color: rgb(52, 173, 58);
+	font-weight: 700;
+}
